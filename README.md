@@ -1,30 +1,63 @@
-# React + TypeScript + Vite
+# Electron Desktop Startup
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Template for Electron with React and Typescript based on Vite.
 
-Currently, two official plugins are available:
+## What's inside?
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This boilerplate includes the following features and technologies:
 
-## Expanding the ESLint configuration
+### Frontend
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Zustand**: A state management library for React, with support for broadcasting and persistence.
+- **React Router Dom**: A routing library for React, using the hash router.
+- **React Query and Axios**: For handling network requests and data fetching.
+- **CSS Modules**: For modular and scoped CSS styles.
+- **Helpers for classNames**: Utility functions for working with CSS class names.
 
-- Configure the top-level `parserOptions` property like this:
+### Backend
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+- **Streamlined Boilerplate**: The boilerplate code has been removed, leaving a more focused and minimal setup.
+- **Window Manager**: An implementation of a window manager for your Electron application.
+
+## Getting Started
+
+To get started with this project, follow these steps:
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/your-username/electron-desktop-startup.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Install dependencies:
+
+```bash
+cd electron-desktop-startup
+npm install
+```
+
+3. Start the development server:
+
+```bash
+npm run dev
+```
+
+This will start the Electron application in development mode, with hot reloading enabled for the frontend.
+
+## Building for Production
+
+To build the application for production, run:
+
+```bash
+npm run build
+```
+
+This will create a production-ready package for your Electron application.
+
+## Customization
+
+You can customize this boilerplate to fit your specific needs. Feel free to modify the frontend and backend components, add new features, and integrate additional libraries as required.
+
+## Contributing
+
+If you find any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request.
